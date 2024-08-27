@@ -18,6 +18,11 @@ echo $suma;
 echo $nombre, " ", direccion;
 
 $apellido = substr("Marines Mendez",8,);
-echo $apellido
+echo $apellido;
+
+$bienvenida = "Bienvenido al mundo de la programacion";
+$palabra = "programacion";
+
+$buscar = strpos($bienvenida, $palabra);
 
 ?>
