@@ -50,4 +50,7 @@ EXTRAER Y BUSCAR PALABRAS EN UNA CADENA V2
 el comando substr("Marines Mendez",8,) sirve para subextraer un string en una cadena.
 en el tercer argumento si es positivo es la posicion de la letra y si es negativo es extraer los ultimos caracteres de la cadena.
 
+el comando strpos(), sirve para obtener la posicion de un string dentro de una cadena
+
+
 

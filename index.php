@@ -24,5 +24,7 @@ $bienvenida = "Bienvenido al mundo de la programacion";
 $palabra = "programacion";
 
 $buscar = strpos($bienvenida, $palabra);
+$extracion = substr($bienvenida,$buscar);
+echo $extracion;
 
 ?>
