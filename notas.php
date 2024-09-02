@@ -95,6 +95,11 @@ operador de asignacion para concatenar .= es para concatenar valores de strings
 operador += es para aumentar el valor de una variable que ya tiene un valor asignado
 tambien aplica con los operadore de **, / , - , %
 
+OPERADORES LOGICOS
+operador and o &&
+operador or o ||
+operador xor verifica que uno de los valores sean verdadero pero no ambos
+operador not o ! verifica que un valor no sea verdadero
 
 
 
