@@ -16,7 +16,7 @@ ejemplo strval(); es para convertir una variable a string, estamos forzando que 
 
 CONCATENACION
 para los string se utiliza punto para contatenarlos.
-echo "Hola" . $palabra . $palabra2;
+echo "Hola" . $palabra . $palabra2; 0
 
 INTERPOLACION
 seria agregar un string dentro de otro string
@@ -52,5 +52,27 @@ en el tercer argumento si es positivo es la posicion de la letra y si es negativ
 
 el comando strpos(), sirve para obtener la posicion de un string dentro de una cadena
 
+REEMPLAZAR Y FORMATO V2
+con el comando remplace(), nos permitirar una palabra o caracter dentro de un string
 
+OPERADORES
+Un operador es un simbolo que opera en ciertos tipos de datos y produce
+la salida como resultado de la operacion.
 
+ternario
+$condicion ? 'true' : false;
+
+operador igual == compara el valor de 2 datos
+operador identico === ademas de comparar los 2 datos, tambien es comparar el tipo de dato
+operador diferente != es lo contrario del signo igual ==
+operador diferente <>
+operador no identico !== es el contario del operador identico
+mayor que >
+mayor igual que >=
+menor que <
+menor igual que <=
+
+operador de nave espacial <=>
+0 ambos valores son iguales
+-1 el valor es menor
+1 el valor es mayor
