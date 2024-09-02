@@ -76,3 +76,15 @@ operador de nave espacial <=>
 0 ambos valores son iguales
 -1 el valor es menor
 1 el valor es mayor
+
+OPERADORES ARITMETICOS
+operador identidad +
+operador de negacion -
+operador adicion +
+operador substracion -
+operador multiplicacion *
+operador division /
+operador modulo % nos dara como resultado el residuo de una division
+operador exponenciacion ** es para elevar un numero en exponente
+
+
