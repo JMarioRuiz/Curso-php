@@ -87,4 +87,14 @@ operador division /
 operador modulo % nos dara como resultado el residuo de una division
 operador exponenciacion ** es para elevar un numero en exponente
 
+OPERADORES DE ASIGNACION
+operadores de asignacion =
+operador de asignacion por referencia = &$variable, es para que siempre se asigne el valor aun cuando
+mas adelante el valor de la variable cambie de valor
+operador de asignacion para concatenar .= es para concatenar valores de strings 
+operador += es para aumentar el valor de una variable que ya tiene un valor asignado
+tambien aplica con los operadore de **, / , - , %
+
+
+
 
