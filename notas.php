@@ -101,5 +101,10 @@ operador or o ||
 operador xor verifica que uno de los valores sean verdadero pero no ambos
 operador not o ! verifica que un valor no sea verdadero
 
+OPERADORES INCREMENTO Y DECREMENTO
+operador pre-incremento ++$variable, suma el valor + 1 y luego regresa el valor
+operador pos-incremento $variable++, regresa el valor y luego suma el valor + 1
+operador pre-decremento --$variable, resta el valor - 1 y luego regresa el valor
+operador pos-decremento $variable--, regresa el valor y luego resta el valor - 1
 
 
