@@ -107,4 +107,12 @@ operador pos-incremento $variable++, regresa el valor y luego suma el valor + 1
 operador pre-decremento --$variable, resta el valor - 1 y luego regresa el valor
 operador pos-decremento $variable--, regresa el valor y luego resta el valor - 1
 
+OPERADOR TERNRIO, ELVIS Y FUSION NULL
+operador ternario (Operando)?Operando:Operando
+operador elvis ?: sirve para verificar si existe un dato o no en la variable
+$aprobo = ($promedio)?:5;
+operandor fusion null ??
+$aprobo = ($promedio)??5;
+
+
 
