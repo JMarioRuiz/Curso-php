@@ -179,3 +179,45 @@ foreach ($array as $nombre) {
     # code...
 }
 ?>
+
+ARREGLOS
+un arreglo es una coleccion ordenada de datos. Los arreglos se emplean para almacenar
+multiples valores en una sola variable.
+<?
+$array = ['Cris', 'Leon', 'Ada'];
+echo $array[1];
+foreach ($array as $index => $nombre) {
+    # code...
+}
+?>
+
+ARREGLOS ASOCIATIVOS
+<?
+$alumnos = ['Cris', 'Leon', 'Ada'];
+$datos = [
+    'nombre' => 'Leon',
+    'apellido' => 'Mendez',
+    'edad' => '29'
+];
+//agregar un dato
+array_push($alumnos,'Luis');
+$datos['Colonia'] = 'Alegria';
+//eliminar un dato
+unset($alumnos[1]);
+unset($datos['apellido']);
+//modificar un dato
+$alumnos[1] = 'León';
+$datos['apellido'] = 'Mendes';
+//funciones para arreglos
+//count() sirve para contar cuantos elementos hay dentro de un arreglo
+//asort() acomoda el arreglo de manera alfabeticamente o de manera ascendente
+//arsort() acomodo el arreglo de manera al revez alfabeticamente o de manera descendente
+//array_search("valor", $arreglo) es para buscar un valor dentro de arreglo
+//array_replace() es para remplazar un datos de un arreglo
+$alumnosCorrecion = array_replace($alumnos,[
+    0=>"Laura",
+    1=>'Jose',
+])
+
+?>
+
