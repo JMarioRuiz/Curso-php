@@ -114,5 +114,68 @@ $aprobo = ($promedio)?:5;
 operandor fusion null ??
 $aprobo = ($promedio)??5;
 
+IF
+<?
+if ($condicion) {
+    # code...
+} else if ($condition) {
 
+}
+else {
+    # code...
+}
 
+?>
+
+SWITCH
+<?
+switch ($variable) {
+    case 'value':
+        # code...
+        break;
+    
+    default:
+        # code...
+        break;
+}
+?>
+
+MATCH V8
+<?
+echo match (expression) {
+    'gris' => 'es una camisa gris',
+    'rojo' => 'es una camisa roja',
+};
+?>
+
+WHILE
+<?
+while ($a <= 10) {
+    # code...
+    ++$a;
+}
+?>
+
+DO WHILE
+<?
+do {
+    # code...
+    ++$a;
+} while ($a <= 10);
+?>
+
+FOR
+<?
+for ($i=0; $i < 10; $i++) { 
+    # code...
+}
+?>
+
+FOREACH
+<?
+$array = ['Cris', 'Leon', 'Ada'];
+$nombre = 'Ada';
+foreach ($array as $nombre) { 
+    # code...
+}
+?>
