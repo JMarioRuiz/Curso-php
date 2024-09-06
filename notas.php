@@ -218,6 +218,23 @@ $alumnosCorrecion = array_replace($alumnos,[
     0=>"Laura",
     1=>'Jose',
 ])
+?>
 
+ARREGLOS MULTIDIMENCIONALES
+los arreglos multidimencionales son muy poderosos porque permiten que aun mas informacion
+sea almacenada en una variable, convirtiendo en portables a inmensos conjuntos de datos
+<?
+$animales = [
+"Felinos" => ["puma","jaguar","lince"],
+"Aves" => ["paloma","pato","tucan"],
+"Reptiles" => ["serpiente","cocodrilo","tortuga"]
+];
+echo $animales[2][1];
+//recorrer un arreglo multidimensional
+foreach ($animales as $key => $clasificacion) {
+    foreach ($clasificacion as $animal) {
+        echo "$key: $animal ";
+    }
+}
 ?>
 
