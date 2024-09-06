@@ -238,3 +238,22 @@ foreach ($animales as $key => $clasificacion) {
 }
 ?>
 
+FUNCIONES
+<?
+$anio = 1994;
+//declarar tipo estricto, es para que las funiones acepten valores de su mismo tipo
+declare(strict_types=1);
+function obtenerEdad(int $anio,int $añoActual=2023){
+    $edad = $añoActual - $anio;
+    return $edad;
+}
+$edad = obtenerEdad(1994);
+echo "Mi edad es: $edad"; 
+//funcion anonima
+$mensaje = "La suma es: ";
+$suma = function ($numero1,$numero2) use ($mensaje){
+    $resultado = $numero1+$numero2;
+    return "$mensaje $resultado";
+};
+echo "La suma es ",$suma();
+?>
