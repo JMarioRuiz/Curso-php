@@ -39,5 +39,5 @@ $mes = "01";
 $dia = "21";
 $formato = "%s-%s-%s";
 
-echo sprintf($formato,$dia,$mes,$añio);
+echo sprintf($formato,$dia,$mes,$anio);
 ?>
