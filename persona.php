@@ -1,5 +1,5 @@
 <?php
-class Persona{
+abstract class Persona{
     // public $nombre;
     // public $apellido;
     // public $edad;
@@ -33,11 +33,11 @@ class Persona{
         echo "Soy --- y hablo sobre $tema", $this->temaEsExtenso($tema);
     }
 
-    public function getTelefono(){
+    protected function getTelefono(){
         return $this->telefono;
     }
 
-    public function setTelefono($telefono){
+    protected function setTelefono($telefono){
         $this->telefono = $this->validarTelefono($telefono);
     }
 

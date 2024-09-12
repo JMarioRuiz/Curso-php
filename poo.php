@@ -5,13 +5,14 @@
 // ini_set('display_errors', '1');
 
 require_once("persona.php");
+require_once("cliente.php");
 $jesus = new Persona("Carlos","Lopez");
 $jesus->hablar("Politica");
 Persona::$idioma = "Español";
 echo Persona::$idioma;
-$jesus->setTelefono("81213156113131321");
+//$jesus->setTelefono("81213156113131321");
 
-echo $jesus->getTelefono();
+//echo $jesus->getTelefono();
 var_dump($jesus->edad);
 
 echo $jesus->apellido;
@@ -22,3 +23,8 @@ $sofia->hablar("K-pop");
 echo $sofia->nombre;
 Persona::$idioma = "Ingles";
 echo Persona::$idioma;
+
+$cliente = new Cliente();
+$cliente->nombre = "Carlos";
+echo $cliente->nombre;
+$cliente->comer();
