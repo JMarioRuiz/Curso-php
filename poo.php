@@ -6,6 +6,7 @@
 
 require_once("persona.php");
 require_once("cliente.php");
+require_once("empleado.php");
 $jesus = new Persona("Carlos","Lopez");
 $jesus->hablar("Politica");
 Persona::$idioma = "Español";
@@ -28,3 +29,17 @@ $cliente = new Cliente();
 $cliente->nombre = "Carlos";
 echo $cliente->nombre;
 $cliente->comer();
+
+//type hinting
+//poder enviar un argumento de tipo objeto y este se pueda resibir en un metodo
+$empleado = new Empleado();
+$empleado->nombre = "Luis";
+$cliente->saludar($empleado);
+
+//polimorfismo
+//solamente se puede sobrescribir funciones de la clase padres sobre la clase hijo
+$cliente->hablar("Gatos");
+
+//traits
+//es un mecanismo de reutilizacion de codigo en leguale de herencia simple
+

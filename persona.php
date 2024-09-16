@@ -1,5 +1,6 @@
 <?php
-abstract class Persona{
+//abstract class Persona
+class Persona{
     // public $nombre;
     // public $apellido;
     // public $edad;
