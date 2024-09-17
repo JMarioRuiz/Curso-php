@@ -8,8 +8,9 @@
 // require_once("cliente.php");
 // require_once("empleado.php");
 require_once("autoload.php");
-$autoCarga = new AutoCarga();
-$autoCarga->cargarRutas();
+// $autoCarga = new AutoCarga();
+// $autoCarga->cargarRutas();
+(new AutoCarga())->cargarRutas();
 $jesus = new Persona("Carlos","Lopez");
 $jesus->hablar("Politica");
 Persona::$idioma = "Español";
