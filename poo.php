@@ -48,5 +48,17 @@ $cliente->hablar("Gatos");
 //es un mecanismo de reutilizacion de codigo en leguale de herencia simple
 //autocarga
 //es mandar a llamar un archivo para cargar todas las rutas de los archivos
+//clases anonima
+//podemos guardar una clase dentro de una variable
+$cliente = new Cliente();
+$claseAnonima = new class{
+    
+    public $nombre;
 
+    function suma(){
+        echo 10+20;
+    }
+};
+
+$claseAnonima->suma();
 
