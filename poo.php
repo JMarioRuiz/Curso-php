@@ -4,9 +4,12 @@
 // error_reporting(E_ALL);
 // ini_set('display_errors', '1');
 
-require_once("persona.php");
-require_once("cliente.php");
-require_once("empleado.php");
+// require_once("persona.php");
+// require_once("cliente.php");
+// require_once("empleado.php");
+require_once("autoload.php");
+$autoCarga = new AutoCarga();
+$autoCarga->cargarRutas();
 $jesus = new Persona("Carlos","Lopez");
 $jesus->hablar("Politica");
 Persona::$idioma = "Español";
@@ -42,4 +45,7 @@ $cliente->hablar("Gatos");
 
 //traits
 //es un mecanismo de reutilizacion de codigo en leguale de herencia simple
+//autocarga
+//es mandar a llamar un archivo para cargar todas las rutas de los archivos
+
 
