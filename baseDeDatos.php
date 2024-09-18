@@ -10,8 +10,11 @@ existen dos apis para comunicarnos, PDO y MySQLi
 MySQLi es una api que sirve solamnete para DBMS de MySQL y DBO se puede utilzar
 para varios gestores de base de datos 
 
+PDO es la que se encarga de mantener la conexion a la base de datos
+PDO Stament es la que maneja las sentencias sql y devuelve los resultados
+PDO Exception se encarga de manejar los errores
 -->
 
 <?php 
-print_r(PDO::getAvailableDrivers());
-?>ge
+
+?>
