@@ -5,7 +5,18 @@ class crud extends Conexion{
     public function __construct(
         public string $tabla
     ){
+        parent::__construct();
         $this->pdo = $this->conexion();   
+    }
+
+    public function consultarTodo(){
+        try {
+            $stm = $this->pdo->prepare("SELECT * FROM $this->tabla");
+            $stm->execute();
+            return $stm->fetchAll(PDO::FETCH_OBJ);
+        } catch (PDOException $mensaje) {
+            echo $mensaje->getMessage();
+        }
     }
 
     public function consultarUno(int $id){
@@ -28,13 +39,18 @@ class crud extends Conexion{
     }
 
     public function crear(string $columnas, string $marcadores, array $datos){
-        $stm = $this->pdo->prepare("INSERT INTO $this->tabla $columnas VALUES $marcadores");
+        $stm = $this->pdo->prepare("INSERT INTO $this->tabla ($columnas) VALUES ($marcadores)");
         $stm->execute($datos);
     }
 
-    public function modificacion(string $columnas, int $id){
-        $stm = $this->pdo->prepare("UPDATE $this->tabla SET $columnas WHERE id=$id");
-        $stm->execute([$id]);
+    public function modificacion(string $columnas, array $datos){
+        $stm = $this->pdo->prepare("UPDATE $this->tabla SET $columnas WHERE id=?");
+        $stm->execute($datos);
     }
+
+    // public function actualizar(string $columnas, int $id){
+    //     $stm = $this->pdo->prepare("UPDATE $this->tabla SET $columnas WHERE id=$id");
+    //     $stm->execute([$id]);
+    // }
 }
 ?>
